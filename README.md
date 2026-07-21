@@ -1,6 +1,6 @@
 # Joyce's macOS Setup
 
-How I set up a new macOS. 
+How I set up a new macOS.
 
 ## Install [Homebrew](https://brew.sh)
 
@@ -26,6 +26,7 @@ brew install --cask google-chrome        # browser
 brew install --cask dropbox              # cloud-based file storage
 brew install --cask mark-text            # markdown editor
 brew install --cask spotify              # audio streaming platform
+brew install --cask vlc.                 # audio/video media player
 
 # Command-Line Tools
 brew install git                         # version control
@@ -33,9 +34,11 @@ brew install jq                          # JSON processor
 brew install zsh                         # extended and upgraded version of Bash
 brew install ffmpeg                      # audio and video file manipulator
 brew install bat                         # feature-rich version of cat
+brew install tree                        # recursive directory listing command
 ```
 
 2. Install [Tailscale](https://tailscale.com) by downloading the official masOS app from its website. The GUI is not available via Homebrew and I prefer it to the CLI.
+3. Install [Logi Options+](https://www.logitech.com/en-us/software/mx-software) from the Logitech website, to customzie my MX mouse and keyboard. 
 
 ## Install and configure [Oh My Zsh](https://ohmyz.sh)
 
@@ -61,7 +64,7 @@ My dotfiles (and other files that helps me set up a clean install of MacOS).
 
 1. Copy configuration files
 
-You can copy/paste the files you want individually, or to copy everything, run the following code block. 
+You can copy/paste the files you want individually, or to copy everything, run the following code block.
 
 **Warning:** This code block may overwrite your existing files!
 
@@ -108,7 +111,7 @@ A list of the files and their usages:
 - `.gitconfig`: Aliases and other preferences for git
 - `.gitconfig.local`: User name and email for git
 - `.gitignore`: A global ignore list of all files to exclude from git commits
-- `.zshrc`: configuration file for Zsh, my preferred shell. 
+- `.zshrc`: configuration file for Zsh, my preferred shell.
 - `alias.zsh`: Some alises I use. These could go in the `.zshrc` file, but I keep it separate for better readability. Since I use Oh My Zsh, I prefer to put any customizations in the `$ZSH_CUSTOM` directory.
 - `mac-preferences.sh`: A shell script to set my preferred MacOS preferences programatically
 - `iterm2_profiles.json`: My custom iTerm2 (my preferred Terminal replacement) profiles
@@ -130,7 +133,7 @@ Setup sync via my Dropbox/Alfred folder
 
 ### iTerm2
 
-Setup default profile to be my `joycewoo` profile,  from this repo's `iterm2_profiles.json` file. 
+Setup default profile to be my `joycewoo` profile, from this repo's `iterm2_profiles.json` file.
 
 1. Open iTerm2's preferences
 
@@ -139,5 +142,17 @@ Setup default profile to be my `joycewoo` profile,  from this repo's `iterm2_pro
 3. Select joycewoo in the "Profile Name" list
 
 4. Go to "Other Actions" > "Set as Default"
+
+### Safari
+
+- View > Show Favorites Bar
+
+- View > Show Status Bar
+
+### Finder
+
+- Add home folder (`~/`) to finder shortcut
+
+- Create `~/Screenshots` folder and set it to be the default location for saving screenshots
 
 
